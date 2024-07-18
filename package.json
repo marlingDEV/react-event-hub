@@ -1,0 +1,39 @@
+{
+  "name": "react-event-hub",
+  "version": "1.0.0",
+  "description": "A React event hub for managing app-wide events",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "npm run build && cd example && npx http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marlingDEV/react-event-hub.git"
+  },
+  "keywords": [
+    "react",
+    "event",
+    "hub",
+    "context",
+    "hooks"
+  ],
+  "author": {
+    "name": "Hoan Quoc Mai",
+    "url": "https://github.com/marlingDEV"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "rollup": "^2.70.1",
+    "typescript": "^4.4.4",
+    "http-server": "^14.0.0"
+  }
+}
